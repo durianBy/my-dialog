@@ -1,0 +1,35 @@
+/*对话框样式—START—*/
+.iep-dialog {
+    top: 40% !important;
+}
+
+.iep-dialog-head {
+    padding: 8px 10px;
+}
+
+.iep-dialog-title {
+    font-size: 16px;
+}
+
+.iep-dialog-body {
+    padding: 40px 36px 46px;
+}
+
+.modal-notice .iep-dialog-body [class ^= "icon-"] {
+    top: 0;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.iep-dialog-body .text {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.iep-dialog-footer {
+    padding: 10px;
+}
+
+.iep-dialog-footer button {
+
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS3动画</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/my-dialog.css">
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+  <button id="dialogBtn">点我弹出对话框</button>
+
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="underscore/underscore-min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/my-dialog.js"></script>
+  <script type="text/javascript">
+    $("#dialogBtn").on('click', function(event) {
+      event.preventDefault();
+      /* Act on the event */
+      $.notice({
+        message: '大家好我是信息弹出框！',
+        buttons: [{
+          text: "确认",
+          onclick: function () {
+            //确定的操作
+
+          }
+        }, {
+          text: "取消",
+          onclick: function () {
+            //取消的操作
+          }
+        }]
+      })
+    });
+  </script>
+</body>
+</html>
